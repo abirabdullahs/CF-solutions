@@ -15,4 +15,5 @@ int main() {
     }
 
     cout<<c/3<<endl;
+    
 }

@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+//Compiler version g++ 6.3.0
+
+int isPrime(int x){
+  for(int i=2; i*i<=x; i++){
+    if(x%i==0) return 0;
+    
+  }
+  
+  return 1;
+}
+
+int main()
+{
+  
+  
+  int a,b;
+  cin>>a>>b;
+  
+  if(!isPrime(b)){
+    cout<<"NO"<<endl;
+    
+    return 0;
+  }
+  
+  int c=0;
+  
+  for(int i=a+1; i<b; i++){
+    if(isPrime(i)){
+      cout<<"NO"<<endl;
+      c++;
+      break;
+    }
+  }
+  
+  if(c==0) cout<<"YES"<<endl;
+  
+}
